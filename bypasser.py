@@ -30,7 +30,7 @@ def get_content(site):
         Below are the highlights of this article:
         ----------------------------------------------------------------------------------------
         '''
-        for b in a:
+        for b in a.findAll('li'):
             summary += f'\n{ptct}. {b.text}\n'
             ptct += 1
     #Whole article section
